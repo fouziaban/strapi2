@@ -7,5 +7,5 @@ variable "instance_type" {
 }
 
 variable "key_pair" {
-  default = "Veera"
+  default = "STRAPI2-FB"
 }
