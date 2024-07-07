@@ -1,1 +1,1 @@
-# strapi2
+# strapi
