@@ -3,7 +3,7 @@ name: Terraform Apply
 on:
   push:
     branches:
-      - master
+      - main
   
 jobs:
   terraform:
@@ -21,7 +21,7 @@ jobs:
       - name: Create SSH Key File
         run: |
           mkdir -p /home/runner/.ssh
-          echo "${{ secrets.ASHOK_EC2_KEY }}" > /home/runner/.ssh/Veera.pem
+          echo "${{ secrets.BANU_EC2_KEY }}" > /home/runner/.ssh/STRAPI2-FB.pem
           chmod 600 /home/runner/.ssh/STRAPI2-FB.pem
           ls -al /home/runner/.ssh  # Verify permissions and existence
           
