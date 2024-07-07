@@ -6,7 +6,7 @@ variable "private_key_path" {
 
 # Security Group
 resource "aws_security_group" "strapi_sg" {
-  name        = "ashok-security-group"
+  name        = "banu-security-group"
   description = "Security group for Strapi EC2 instance"
 
   ingress {
@@ -72,7 +72,7 @@ resource "aws_instance" "strapi" {
     "mkdir -p /home/ubuntu/.npm && sudo chown -R ubuntu:ubuntu /home/ubuntu/.npm",
     "nvm install 18",
     "sudo npm install -g pm2",
-    "git clone https://github.com/veera1016/strapi.git"
+    "git clone https://github.com/fouziaban/strapi2.git"
   ]
     connection {
       type        = "ssh"
