@@ -56,7 +56,7 @@ resource "aws_instance" "strapi" {
   vpc_security_group_ids = [aws_security_group.strapi_sg.id]
 
   tags = {
-    Name = "StrapiServer"
+    Name = "strapi2-fb"
   }
 
   provisioner "remote-exec" {
