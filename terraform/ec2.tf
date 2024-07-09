@@ -62,7 +62,7 @@ resource "aws_instance" "strapi" {
   provisioner "remote-exec" {
   inline = [
     "sudo apt update -y",
-    "curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -",
+    "curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash -",
     "sudo apt-get install -y nodejs",
     "curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash",
     "export NVM_DIR=\"$HOME/.nvm\"",
